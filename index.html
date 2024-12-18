@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pokédex</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Rechercher un Pokémon...">
+        </div>
+    </header>
+
+    <main>
+        <div class="types-container">
+            <!-- Types de Pokémon -->
+        </div>
+        
+        <div class="pokemon-list">
+            <!-- Liste des Pokémon -->
+        </div>
+
+        <div class="pagination">
+            <button id="prevPage">Précédent</button>
+            <span id="currentPage">1</span>
+            <button id="nextPage">Suivant</button>
+        </div>
+
+        <div id="pokemonModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="pokemonDetails"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
